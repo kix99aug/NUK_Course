@@ -31,7 +31,6 @@ function delay(sec) {
         await delay(0.5).then(async function () {
             content = await page.property('url');
             console.log(content);
-            page.render('./snapshot/test.png');
             var swit = true;
             while(swit == true) {page.evaluate(function () { document.querySelector("[name = header]").contentDocument.querySelector('[value = "加選"]').click(); });
             await delay(0.5).then(async function () {
