@@ -1,6 +1,9 @@
 {
   "name": "nuk_course",
   "author": "Kix",
-  "version": "0.0.1",
-  "main": "app.js"
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "phantom": "^6.0.3"
+  }
 }
