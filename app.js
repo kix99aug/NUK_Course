@@ -48,7 +48,7 @@
         await page.open('https://course.nuk.edu.tw/Sel/AddScript.asp', 'POST', "total_count=10&Beg_Time=&Certify=" + ctext + pData[1]);
         let plain = await page.property('plainText');
         console.log(plain);
-        if ((plain.search("成功") > -1) && (plain.search("錯誤") == -1)) break;
+        if ((plain.search("成功") > -1) && (plain.search("錯誤") == -1)&& (plain.search("失敗") == -1)) break;
     }
     browser.exit();
     return;
