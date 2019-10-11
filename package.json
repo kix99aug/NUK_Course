@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {
+    "lodash": ">=4.17.13"
     "phantom": "^6.0.3"
   }
 }
